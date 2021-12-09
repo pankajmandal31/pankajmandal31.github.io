@@ -573,9 +573,9 @@ header{
     #shortcut {
         display: block;
 /*        border: 2px solid red;*/
-        margin-left: 240px;
+        margin-left: 260px;
         position:fixed;
-        top:490px;
+        top:540px;
     }
 /*
     .const{
