@@ -1,0 +1,579 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:black;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.const p{
+    padding-top:210px; 
+    padding-right: 25px
+}
+.const{
+    
+    display: flex;
+    height:100%;
+    width:100%;
+    font-size: 22px;
+    justify-content: center;
+}
+.const::before{
+    background:url(assets/p26.jpg);
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-position:top;
+    background-size:cover ;
+    z-index: -1;
+}
+html{
+    font-size: 
+}
+/*body{overflow: hidden}*/
+::-webkit-scrollbar {
+/*    display: none;*/
+}
+::-webkit-scrollbar-button:single-button {
+            background-color: red;
+            height: 16px;
+            width: 16px;
+}
+
+/*----------to display contents of header in a row*/
+header{
+    height:59px;
+    display: flex;
+    padding-top: 5px;
+    position:sticky;
+    top:0px;
+    opacity: .8;
+    background-color:rgb(90 180 86 / 95%);
+}
+
+/*---------to keep track of size of boxes*/
+.navbar{
+/*    border:2px solid red;*/
+}
+
+/*-----------logo box-------------*/
+#box1 p{
+    font-size: 15px;
+    position: relative;
+    transition-duration:1s;
+}
+#box1 p:hover{
+    animation: logohover 4s ease-in 0s 1 forwards;
+    animation-name: logohover;
+    animation-duration: .5s;
+    transform: rotate(360deg);
+}
+@keyframes logohover{
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 20px;
+        
+    }
+}
+#box1{
+    border: 4px solid black;
+    font-size: 15px;
+    text-align: center;
+    height: 152px;
+    margin-top: -10px;
+    margin-left: 53px;
+    line-height: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: white;
+}
+#box1 img{
+    height:110px;
+    width:110px;
+}
+
+/*--------------navigation bar----------------*/
+#box2{
+    display:flex;
+    width:100;
+    padding:4px;
+    margin:auto;
+    margin-top: 5px;
+}
+#box2 ul{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box2 li a{
+    color:white;
+    padding:4px;
+    font-size: 24px;
+    margin: 0px 30px;
+    text-decoration: none;
+    transition: all .2s;
+    font-family:'Lobster', cursive;
+}
+#box2 li a:hover{
+    padding:8px;     /*    its creating zoom effect*/
+    font-size: 28px;
+    text-shadow: -10px 10px black;
+}
+#box2 li a::after{
+    content:"";
+    background-color: black;
+    height:6px;
+    width:0%;
+    display: block;
+    margin: auto;
+    margin-top: 9px;
+    transition: 1s;
+}
+#box2 li a:hover::after{
+/*    width:100%;*/
+/*    increase it to get underline effect in navbar*/
+}
+
+/*----------------side buttons-------------*/
+#box3{
+    height:31px;
+/*    padding:10px;*/
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.navbtn{
+    padding:3px;
+    border-radius: 6px;
+    cursor:pointer;
+    display: none
+    }
+.navbtn:hover{
+    padding:3px;
+    border-radius: 6px;
+    cursor:pointer;
+    text-decoration: underline;
+    color: tomato;    
+    }
+
+/*-------------------Introduction-------------*/
+#bigcontainer1{
+/*    padding:100px;*/
+/*    border:2px solid green;*/
+/*    text-align: center;*/
+/*text align will maintain the text in center but 
+    disrupt the image to centre also because it is assumed as a content */
+    font-size: 20px;
+    height:90vh;
+    width:100vw;
+}
+#bigcontainer1::before{
+    content:"";
+    position:absolute;
+    background: url(assets/p10.jpg);
+    height:90vh;
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    z-index: -1;
+    opacity:;
+}
+#bigcontainer1 div{
+    height: 75vh;
+/*    justify-content: center;*/
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    margin-right:px;
+}
+#bigcontainer1 h1{
+    margin-bottom: 25px;
+}
+
+/*-------------kavita container--------------*/
+#bigcontainer2{
+/*    border:2px solid black;*/
+    display: flex;
+    height:80vh;
+    width:100%;
+    flex-direction: column;
+}
+#bigcontainer2::before{
+    content:"";
+    position:absolute;
+    background: url(assets/p3.jpg);
+    height:80vh;
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/*----------heading inside kavita container-----------*/
+.mediumcontainer1 h1{
+/*    border:2px solid black;*/
+    color:black;
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0px 40px 0px;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*---------partition of kavita container--------------*/
+.mediumcontainer2{
+/*    border:2px solid blue;*/
+    display: flex;
+    justify-content: space-around;    
+}
+
+/*----------exit text kavita container-----------*/
+.mediumcontainer3 {
+    display: flex;
+    margin: 40px 60px; ;
+    flex-direction: row-reverse;
+}
+.mediumcontainer3{
+    font-size: 20px;
+}
+.mediumcontainer3 a:hover{
+    color: red;
+}
+
+/*-----------reading flexes-----------*/
+.smallcontainer{
+    
+    overflow:auto;
+    border:4px solid black;
+    border-radius: 10px;
+    padding:20px;
+    margin-top:10px;
+    height:250px;
+    width:25%;
+    text-align: center;
+    box-shadow: -5px 5px 10px black;
+    transition-duration: .4s;
+    }
+.smallcontainer:hover{
+    box-shadow: -15px 15px 15px black;
+    transform: scale(1.1);
+    cursor:text;
+}
+.smallcontainer>h2{
+    margin-bottom: 10px;
+}
+
+
+/*-------------Shayari container-----------*/
+#bigcontainer3:before{
+    content:"";
+    position:absolute;
+    background: url(assets/p21.jpg);
+    height:90vh;
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    z-index: -1;
+    opacity: 0.5;
+    margin-top: -40px;
+}
+
+#bigcontainer3{
+    height:90vh;
+    width:100vw;
+}
+/*---------shayari container flex mode--------*/
+#b3m2{
+/*    border: 2px solid black;*/
+    display:flex;
+    flex-direction: row;
+    margin:0px 20px 0px 20px;
+/*    justify-content:space-around;*/
+}
+#mc21{
+/*    border: 2px solid red;*/
+    display:flex;
+    flex-direction: column;
+}
+#mc22{
+/*    border: 2px solid red;*/
+    display:flex;
+    flex-direction: column;
+}
+#sf{          /*reducing size of flexes*/
+    height:20vh;
+    padding: 30px;
+/*    border: 2px solid red;*/
+    width:40vw;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+#sf>h2{
+    display: none;
+}
+#b3m3{
+    margin-top:0px;
+}
+
+/*----------Ghazal Container ----------*/
+#bigcontainer4{
+/*    border:2px solid black;*/
+/*    display: flex;*/
+    height:70vh;
+    width: :100%;
+    flex-direction: column;
+    margin-top:-40px;
+}
+#bigcontainer4::before{
+    content:"";
+    position:absolute;
+    background: url(assets/p19.jpg);
+    height:80vh;
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    z-index: -1;
+    opacity: 0.7;
+    margin-top: -40px;
+}
+
+/*---------contact us container------------*/
+#contactus{
+    position: relative;
+    top:-32px;
+/*    border: 1px solid red;*/
+    height:10vh;
+    width:100%;
+    z-index: 1;
+}
+#contactus::before{
+    content:"";
+    position: absolute;
+    background-color: rgb(90 180 86 / 95%);
+    height:10vh;
+    width:100%;
+    z-index: -1;
+}
+
+/*------------BAck to top button------------*/
+#shortcut{
+    display: inline-block;
+    position: sticky;
+    top:80vh;
+    bottom:80px;
+    margin-left:90vw;
+    width:42px;
+    height:42px;
+    border-radius: 40px;
+    box-shadow:15px 10px 10px black;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 100;
+/*
+    background-color: rgb(90 180 86 / 95%);
+    border: 4px solid red;
+*/    
+}
+#shortcut:hover{
+    box-shadow:20px 10px 10px black;
+    
+}
+#shortcut a img{
+    height: 50px;
+    width:50px;
+}
+#shortcut a img:hover{
+    transform: scale(1.1);
+    
+/*
+    height: 60px;
+    width:60px;
+*/
+}
+
+
+@media screen and (max-width:400px){
+    #box1{
+        transform: scale(.5);
+        position: fixed;
+        top:2px;
+        left: -82px;
+        border: 0;
+    }
+    #header{
+/*
+        position: sticky;
+        top: 0px;
+*/
+        height:30px;
+        background-color:darkgreen;
+        opacity: 0.8;
+    }
+    #box2{
+        position: absolute;
+        top: -12px;
+        margin: auto;
+        margin-left: -60px;
+        transform: scale(0.7);
+    }
+    
+    #bigcontainer1{
+/*        border: 3px solid yellow;*/
+        height:40vh;
+        width: 100%;
+    }
+    #bigcontainer1:before{
+        height:40vh;
+        width: 100%;
+    }
+    #bigcontainer1 div{
+        font-size: 10px;
+        padding:40px 40px 0px 30px;
+    }
+    #bigcontainer1 h1{
+        margin-bottom: 10px;
+    }
+    #bigcontainer2{
+        border: 2px solid black;
+        height:100vh;
+        width:100%;
+    }
+    #bigcontainer2::before{
+        background: url(assets/p4.jpg);
+        height: 100vh;
+        width:100% ;
+        opacity: 0.9;
+        background-size: cover;
+    }
+    .mediumcontainer2{
+        height:55vh;
+        display: block;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .smallcontainer{
+        text-overflow:auto;
+        font-size: 15px;
+        height:30%;
+        width:80%;
+        margin: auto;
+        margin-bottom: 20px;
+/*        word-wrap: break-word;*/
+        
+    }
+    #b2s:hover{
+        height:20vh;
+        background:url(assets/p1.jpg);
+        background-position: center;
+    }
+    
+    .mediumcontainer3>a{
+        font-size: 15px;
+        margin-right:-20px;
+    }
+    #bigcontainer3{
+/*        border: 2px solid black;*/
+/*if applied border then remove margin top*/
+        height:110vh;
+        width: 100%;
+        margin-top: 40px;
+    }
+    #bigcontainer3:before{
+        background: url(assets/p19.jpg);
+        height:110vh;
+        width: 100%;
+        margin-top: -40px;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #b3m2{
+        position:relative;
+        top: 20px;
+        margin: 0px;
+        flex-direction: column;
+    }
+    #sf{
+        font-size: 12px;
+/*        height:30%;*/
+        width:90%;
+        
+        }
+    #sf>p{
+        margin-top:-20px ;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    #sf:hover{
+        background: url(assets/p1.jpg);
+        transform: scale(1);
+/*
+        font-size: 12px;
+        height:30%;
+        width:90%;
+*/
+        }
+    #sf>h2{
+        display: none;
+    }
+    #mc21{
+        height: 45%;
+        justify-content: center;
+    }
+    #mc22{
+        height: 45%;
+/*        justify-content: center;*/
+    }
+    #b3m3{
+        margin-top: 100px
+    }
+    #bigcontainer4{
+/*        border: 2px solid black;*/
+        height:100vh;
+        width:100%;
+        margin-top:-40px;
+    }
+    #bigcontainer4::before{
+        background: url(assets/p17.jpg);
+        background-size: cover;
+        height: 100vh;
+        width:100% ;
+        margin-top: -40px;
+        background-size: cover;
+        opacity: 0.9;
+    }
+    #b4s:hover{
+        height: 20vh;
+        background:url(assets/p1.jpg);
+        background-position: center;
+        z-index: 20;
+    }
+    #contactus{
+        margin-top:-8px;
+        z-index: -8;
+    }
+    #shortcut {
+        display: block;
+/*        border: 2px solid red;*/
+        margin-left: 240px;
+        position:fixed;
+        top:490px;
+    }
+/*
+    .const{
+        font-size: 30px;    
+    }
+*/    
+    .const::before{
+        background: url(assets/p25.jpg);
+        background-size: cover
+    }
+    .const p{
+        padding-top: 70px;
+        padding-left: 30px;
+    }
