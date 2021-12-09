@@ -37,10 +37,10 @@ html{
 ::-webkit-scrollbar {
 /*    display: none;*/
 }
-::-webkit-scrollbar-button:single-button {
+/* ::-webkit-scrollbar-button:single-button {
             background-color: red;
             height: 16px;
-            width: 16px;
+            width: 16px; */
 }
 ::-webkit-scrollbar {
     width: 12px;
