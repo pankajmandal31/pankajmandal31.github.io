@@ -517,6 +517,9 @@ header{
         width:90%;
         
         }
+    #sf::-webkit-scrollbar {
+    display: none;
+    }
     #sf>p{
         margin-top:-20px ;
         margin-left: -20px;
